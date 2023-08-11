@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCCN</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body, #body{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+
+        img{
+            margin: 20px 0;
+            border: 2px solid red;
+            width: 90vw;
+        }
+    </style>
+</head>
+<body>
+    <div id="body">
+
+    </div>
+    <script defer>
+        for (let i = 1; i < 117; i++) {
+            document.getElementById("body").innerHTML+=`<img src="https://image.slidesharecdn.com/ch03-100307211310-phpapp02/75/chapter-3-data-and-signals-${i}-2048.jpg">`;
+        }
+    </script>
+</body>
+</html>
